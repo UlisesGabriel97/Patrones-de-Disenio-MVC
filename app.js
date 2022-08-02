@@ -4,7 +4,7 @@ const path = require('path');
 const port = 3000;
 
 app.use(express.static(path.resolve(__dirname, "public")))
-
+app.set("view engine", "ejs")
 
 /* Importacion de rutas */
 let homeRouter = require("./routers/home")
